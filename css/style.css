@@ -1,9 +1,7 @@
 html {
-
   box-sizing: border-box;
   background-image: url(../img/фон.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,20 +16,15 @@ html {
 }
 
 .wrapper {
-
   max-width: 1060px;
   margin: 0 auto;
 }
 
 /*Header styles start*/
 .header {
-
-  position: fixed;
-  top: 0;
+  margin-top: 50px;
   left: 0;
   width: 100%;
-
-
 }
 
 body {
@@ -41,50 +34,36 @@ body {
   font-weight: normal;
   line-height: 1.2;
   color: white;
-
-}
-
-.header_nav {
-  position: relative;
-
 }
 
 .header_list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header_list:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.left-item {
-  float: left;
-}
-
-.right-item {
-  float: right;
+  display: flex;
 }
 
 .header__logo-lik {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left-item {
+  flex-shrink: 0;
+}
+
+.right-item {
+  flex-shrink: 0;
+}
+
+.header__logo-lik {
+  flex-grow: 0;
 }
 
 .header_list a {
+  width: 100%;
   text-decoration: none;
-  display: block;
   line-height: 89px;
   padding: 0 20px;
   font-size: 14px;
   font-family: TT Travels;
   color: white;
-  transition: .3s linear;
 }
 
 @media (max-width: 830px) {
@@ -136,8 +115,12 @@ body {
 
 /*Intro styles end*/
 
-.NFT {
+.main {
+  margin-top: 68px;
+}
 
+.NFT {
+  text-align: center;
   font-family: 'TT Travels';
   font-style: normal;
   font-weight: 800;
@@ -146,9 +129,6 @@ body {
   letter-spacing: -0.025em;
   color: white;
   margin-bottom: 40px;
-  position: absolute;
-  left: 374px;
-  top: 254px;
 }
 
 .Market {
@@ -159,10 +139,7 @@ body {
   line-height: 89%;
   letter-spacing: -0.025em;
   color: white;
-  position: absolute;
-  left: 92px;
-  top: 361px;
-
+  padding-left: 92px;
 }
 
 .hread {
@@ -171,9 +148,7 @@ body {
   max-height: 76px;
   font-size: 16px;
   font-weight: medium;
-  position: absolute;
-  left: 540px;
-  top: 485px;
+  margin-left: 36px;
 }
 
 .button1 {
@@ -182,13 +157,11 @@ body {
   width: fit-content;
   padding: 20px 29px 26px 29px;
   gap: 10px;
-  background: #FFFFFF;
+  background: #FCD400;
   border-radius: 100px;
-  position: absolute;
   width: 184px;
   height: 70px;
-  left: 95px;
-  top: 491px;
+  margin-left: 92px;
 }
 
 .button2 {
@@ -198,8 +171,6 @@ body {
   padding: 20px 20px 20px 49px;
   gap: 10px;
   color: #03FFE1;
-  ;
-  position: absolute;
   width: 184px;
   height: 70px;
   left: 320px;
@@ -208,8 +179,26 @@ body {
   border: 1px solid #03FFE1;
   border-radius: 100px;
   font-size: 20px;
+  margin-left: 31px;
 }
 
+.button-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.pic1 {
+  margin-left: 92px;
+  ,t
+}
+
+.picture {
+  display: flex;
+  
+}
+/* 
 .picture {
   position: absolute;
   top: 745px;
@@ -245,4 +234,4 @@ body {
 .plug3{
   position: absolute;
   left: 1091px;
-}
+} */
